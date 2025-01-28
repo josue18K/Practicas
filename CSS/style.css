@@ -1,0 +1,59 @@
+/* material css */
+li {
+    /* color: green; */
+}
+
+/* este selector esta basado en etiquetas */
+body {
+    background-color: #192229;
+    color: white
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    /* color: red; */
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header {
+    padding: 10px;
+    margin: 10px;
+}
+
+/* este selector esta basado en clases */
+h2 {
+    color: white;
+
+    /* background-color: lightblue;
+    padding: 100px 100px 100px 100px;
+    border: 5px dashed blue;
+    margin: 100px 100px 100px 100px; */
+}
+
+img {
+    width: 150px;
+    height: 220px;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+img:hover{
+    background-color: red;
+}
+
+.movies{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <!-- <style>
+        li {
+            color: green;
+        }
+        .imagen-redondeada {
+            width: 400px;
+            height: 400px;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+    </style> -->
+</head>
+<!-- 3 formas de interactuar con css -->
+<!-- 
+     en linea (check)
+     interno
+     externo -->
+
+
+<body id="body">
+    <!-- Este es el titulo de mi pagina -->
+    <h1>Hola Mundo!</h1>
+    <p>Bienvenidos al laboratorio</p>
+    <!-- <h2>Este es un h2</h2>
+    <h3>Ese es un h3</h3>
+    <h4>Ese es un h4</h4>
+    <h5>Ese es un h5</h5>
+    <h6>Ese es un h6</h6> -->
+    <header>
+        <!-- header: agrupador de cabezera -->
+        <nav>
+            <!-- nav:agrupador de menu  -->
+            <!-- Listar ordenada y lista desordenada
+        Lista ordenada ol : order list -->
+            <!-- <ol>
+            <li>Iten 1</li>
+            <li>Iten 2</li>
+        </ol>
+        Lista desornada ul : unorder list
+         <ul>
+            <li>Iten 1 desorden</li>
+            <li>Iten 2 desorden</li>
+         </ul> -->
+            <ul>
+                <li id="inicio">Inicio</li>
+                <li>Peliculas</li>
+                <li>Series</li>
+                <li>Mi lista</li>
+                <li>Perfil</li>
+                <li><a href="#footer">Ir al Footer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 style="color: blue; text-align: center;">PELICULAS NETFLIX CLONE</h2><!-- uso de css en linea -->
+        <section>
+            <!-- Seccion que seria para el video -->
+            <!-- Aqui iria el video -->
+            <figure style="text-align: center;">
+                <img src="../img/ElGoat.jpg" alt="Imagen no disponible" width="200">
+                <b>
+                    <figcaption>EL GOAT</figcaption>
+                </b>
+            </figure>
+            <hr>
+            <p style="font-size: xx-large; color: red;">Big Buck Bunny</p>
+
+            <p style="font-size: small;text-align: justify; color: blue;">
+                Este seria un texto que se posicionaria delante del video
+            </p>
+        </section>
+        <section class="movie-gallery">
+            <!-- Seccion que seria para el contenidos de las peliculas -->
+<!-- 
+            ¡🚀 Mejora tu productividad en HTML y CSS con Emmet! 🌟
+            Esta herramienta es un salvavidas para desarrolladores web, integrada en editores como VS Code. Te permite
+            escribir código rápido y eficiente, generando estructuras con simples abreviaciones. ¡Es como tener
+            superpoderes al programar! 🦸‍♂️
+            ✨ ¿Qué puedes hacer con Emmet?
+            Emmet te permite crear etiquetas con clases, ids y jerarquías complejas en segundos. Aquí hay algunos
+            ejemplos básicos y útiles:
+
+            Estructura básica
+
+            <h2></h2>
+
+            etiqueta dentro de otra etiqueta >
+            <div>
+                <p></p>
+            </div>
+
+            <con emmet 
+            etiqueta con otra etiqueta (dos etiquetas al mismo nivel) 
+
+            <div>
+                <p></p>
+                <a href=""></a>
+            </div>
+
+            ahora con texto {}
+            p{Esto es el texto}
+
+            <p>Esto es el texto</p>
+             <div>
+                <p>hola</p>
+                <a href=""></a>
+            </div> 
+
+            <div>header+main{AEW}+footer
+
+            <div>
+                <header></header>
+                <main>AEW</main>
+                <footer></footer>
+            </div>
+
+            Hacer mas de un elemento *
+            ul>li*5
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, repellat culpa possimus facilis aperiam
+                amet veniam molestiae voluptates eveniet soluta excepturi cumque consectetur voluptate, autem, corrupti
+                asperiores vel mollitia praesentium.
+
+                Distinctio aperiam itaque soluta nostrum sit perspiciatis quas similique unde deleniti rerum quisquam
+                atque, incidunt, tenetur recusandae iusto id neque. Dolore esse vel obcaecati. Beatae distinctio ratione
+                explicabo fuga aspernatur!
+
+                Necessitatibus praesentium laborum aut nesciunt deserunt quidem, sapiente iusto eveniet incidunt vel
+                dolor autem asperiores aliquid. Expedita voluptatem aperiam possimus, molestias quo id similique
+                architecto corporis laudantium laborum. Perspiciatis, natus?
+
+                Expedita labore laboriosam aliquid commodi quia saepe porro dolorum eveniet recusandae atque eos
+                provident vero, ratione fuga quidem, totam, consectetur maiores? Voluptatem neque, quae est tempora
+                veniam dolore repudiandae ex?
+
+                Adipisci minima in suscipit, corporis nam voluptatibus necessitatibus, magni temporibus dolor placeat
+                sit debitis? Exercitationem fugiat soluta perspiciatis rerum animi quia autem reiciendis natus nulla ut!
+                Excepturi, ducimus. Eius, alias.</p>
+
+                ul>li*5{hola $}
+                <ul>
+                    <li>hola 1</li>
+                    <li>hola 2</li>
+                    <li>hola 3</li>
+                    <li>hola 4</li>
+                    <li>hola 5</li>
+                </ul>
+
+                nav#menu>ul.nav-menu>li*3.nav-menu-items
+                <nav id="menu">
+                    <ul class="nav-menu">
+                        <li class="nav-menu-items"></li>
+                        <li class="nav-menu-items"></li>
+                        <li class="nav-menu-items"></li>
+                    </ul>
+                </nav> -->
+
+                <!-- h2.titulo-seccion{Peliculas Populares} -->
+                <h2 class="titulo-seccion">Peliculas Populares</h2>
+
+                <!-- div.movies>article>img -->
+                <div class="movies">
+                    <article>
+                        <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/bGYCimDXRL7cE3uETLZzMCFOdJo.jpg" alt="imagen no disponible">
+                    </article>
+                </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer id="footer">
+        Derechos reservados Alumnos AEW
+    </footer>
+    <center>
+        <a href="#inicio">Ir al inicio</a>
+        <br>
+        <a href="https://netflix.com" target="_blank">Ir a Netflix</a>
+    </center>
+    <hr>
+    <figure style="text-align: center; padding: 10px;">
+        <img src="https://trome.com/resizer/v2/5JFL4TRILZGDDAY7TICNXUTX2E.jpg?auth=f476c7e9db3f4cd4f0ed19fb6d8e2772e5c5f0a85a76845a2e97bb20c0f5e3f8&width=580&height=330&quality=90&smart=true"
+            alt="Imagen no disponible" class="imagen-redondeada">
+        <b>
+            <a style="color: red;" href="https://es.wikipedia.org/wiki/Susy_D%C3%ADaz" target="_blank">
+                <figcaption>SUSY DIAZ</figcaption>
+            </a>
+            <a style="color: red;" href="https://www.instagram.com/sudiazoficial/?hl=es" target="_blank">
+                <figcaption>INSTAGRAM</figcaption>
+            </a>
+
+        </b>
+    </figure>
+</body>
+
+</html>
