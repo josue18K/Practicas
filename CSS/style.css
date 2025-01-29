@@ -53,6 +53,22 @@ img:hover{
     background-color: red;
 }
 
+.movies-popular img:hover{
+    background-color: rgba(159, 39, 214, 0.849);
+}
+
+.movies-romantic img:hover{
+    background-color: rgb(55, 204, 197);
+}
+
+.movies-action img:hover{
+    background-color: rgb(221, 166, 14);
+}
+
+.movies-childish img:hover{
+    background-color: rgb(219, 120, 203);
+}
+
 .movies-popular{
     display: flex;
     justify-content: space-between;
