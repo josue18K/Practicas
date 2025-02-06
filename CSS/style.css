@@ -1,87 +1,140 @@
-/* material css */
-li {
-    /* color: green; */
-}
-
-/* este selector esta basado en etiquetas */
+/* Estilos generales */
 body {
-    background-color: #063d68;
-    color: white
-}
-
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-    /* color: red; */
-    list-style: none;
-}
-
-header nav ul li a {
-    text-decoration: none;
+    background-color: rgb(61, 61, 71);
     color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header nav ul li a:hover {
-    background-color: gray;
-    padding: 5px;
-    border-radius: 5px;
-}
-
+/* Estilos del header y menú */
 header {
-    padding: 5px;
-    margin: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 1000;
 }
 
-/* este selector esta basado en clases */
-h2 {
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: white;
-
-    /* background-color: lightblue;
-    padding: 100px 100px 100px 100px;
-    border: 5px dashed blue;
-    margin: 100px 100px 100px 100px; */
+    text-decoration: none;
+    font-size: 18px;
 }
 
-img {
+/* Estilos del video y su superposición */
+#video-section {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.video-overlay h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.video-overlay button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.video-overlay button.info {
+    background-color: chocolate;
+    transition: opacity 0.5s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.video-overlay button.info:hover {
+    opacity: 0.8;
+    background-color: darkorange;
+}
+
+.video-overlay button.play {
+    background-color: rgb(209, 78, 78);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.video-overlay button.play:hover {
+    transform: scale(1.2);
+    background-color: rgb(255, 50, 50);
+}
+
+.video-overlay button.luky {
+    background-color: rgb(207, 209, 78);
+    transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.video-overlay button.luky:hover{
+    transform: rotate(30deg) scale(1.1);
+    box-shadow: 0px 0px 15px red;
+}
+
+
+
+
+/* Estilos de las galerías de películas */
+.movie-gallery {
+    margin: 80px 20px 20px 20px;
+}
+
+.movies {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 10px;
+    overflow-x: hidden;
+}
+
+.movies article img {
     width: 150px;
     height: 220px;
-    border-radius: 25px;
-    padding: 5px;
+    border-radius: 10px;
+    transition: transform 0.1s ease-in-out;
 }
 
-img:hover{
-    background-color: red;
+.movies article img:hover {
+    transform: scale(1.1);
 }
 
-.movies-popular img:hover{
-    background-color: rgba(159, 39, 214, 0.849);
-}
+.mo
 
-.movies-romantic img:hover{
-    background-color: rgb(55, 204, 197);
-}
-
-.movies-action img:hover{
-    background-color: rgb(221, 166, 14);
-}
-
-.movies-childish img:hover{
-    background-color: rgb(219, 120, 203);
-}
-
-.movies-popular{
-    display: flex;
-    justify-content: space-between;
-}
-.movies-romantic{
-    display: flex;
-    justify-content: space-between; 
-}
-.movies-action{
-    display: flex;
-    justify-content: space-between;
-}
-.movies-childish{
-    display: flex;
-    justify-content: space-between;
+/* Estilos del footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    margin-top: 20px;
 }

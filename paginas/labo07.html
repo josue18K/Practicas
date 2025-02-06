@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <!-- Header y menú de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#peliculas">Películas</a></li>
+                <li><a href="#series">Series</a></li>
+                <li><a href="#milista">Mi Lista</a></li>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#footer">Ir al Footer</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Sección del video principal -->
+        <section id="video-section">
+            <video autoplay muted loop>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay">
+                <h1>Big Buck Bunny</h1>
+                <p>Una historia animada llena de aventuras.</p>
+                <button class="play">Play</button>
+                <button class="info">Info</button>
+                <button class="luky">Luky</button>
+                
+            </div>
+        </section>
+        
+        <!-- Sección de películas populares -->
+        <section class="movie-gallery" id="peliculas">
+            <h2 class="titulo-seccion">Películas Populares</h2>
+            <div class="movies">
+                <article><img src="../img/populares/watson.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/populares/house.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/populares/prime.jpg" alt="imagen no disponible"></article>
+                <article><img src="../img/populares/rambo.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/populares/sonic.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/populares/paradise.webp" alt="imagen no disponible"></article>
+            </div>
+        </section>
+        
+        <!-- Sección de películas infantiles -->
+        <section class="movie-gallery" id="series">
+            <h2 class="titulo-seccion">Películas Infantiles</h2>
+            <div class="movies">
+                <article><img src="../img/infantiles/barbie.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/infantiles/cenicienta.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/infantiles/moana.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/infantiles/mufasa.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/infantiles/polican.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/infantiles/spider.webp" alt="imagen no disponible"></article>
+            </div>
+        </section>
+        
+        <!-- Sección de películas románticas -->
+        <section class="movie-gallery" id="milista">
+            <h2 class="titulo-seccion">Películas Románticas</h2>
+            <div class="movies">
+                <article><img src="../img/romanticas/amor.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/romanticas/comedie.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/romanticas/ladron.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/romanticas/rochefort.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/romanticas/romanticos.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/romanticas/romantique.webp" alt="imagen no disponible"></article>
+            </div>
+        </section>
+        
+        <!-- Sección de películas de acción -->
+        <section class="movie-gallery" id="perfil">
+            <h2 class="titulo-seccion">Películas de Acción</h2>
+            <div class="movies">
+                <article><img src="../img/accion/royal.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/accion/jacinto.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/accion/jhonny.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/accion/policial.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/accion/vuelta.webp" alt="imagen no disponible"></article>
+                <article><img src="../img/accion/mutante.webp" alt="imagen no disponible"></article>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer id="footer">
+        <a href="#inicio">Ir al inicio</a>
+        <a href="https://netflix.com" target="_blank">Ir a Netflix</a>
+        <p>Derechos reservados - Netflix Clone</p>
+    </footer>
+</body>
+</html>
